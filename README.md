@@ -4,7 +4,7 @@ API RESTful para procesamiento de mensajes de chat construida con Flask, que val
 
 ## Características
 
-### Funcionalidades Core
+### Funcionalidades core
 - **API RESTful** con endpoints para crear y recuperar mensajes
 - **Validación completa** de mensajes con manejo robusto de errores
 - **Pipeline de procesamiento** con filtrado de contenido inapropiado
@@ -14,7 +14,7 @@ API RESTful para procesamiento de mensajes de chat construida con Flask, que val
 - **Pruebas completas** con cobertura del 80%+
 - **Manejo de errores** con códigos HTTP apropiados y mensajes descriptivos
 
-### Funcionalidades Avanzadas
+### Funcionalidades avanzadas
 - **Autenticación con API Keys** - Sistema de autenticación simple y seguro
 - **WebSocket en tiempo real** - Actualizaciones instantáneas de mensajes
 - **Búsqueda avanzada** - Búsqueda por contenido, fechas y remitente
@@ -27,6 +27,7 @@ API RESTful para procesamiento de mensajes de chat construida con Flask, que val
 - Python 3.10+
 - Flask
 - SQLite (incluido con Python)
+- Pytest
 
 ## Instalación
 
@@ -183,7 +184,7 @@ curl http://localhost:7000/api/health
 }
 ```
 
-### 3. Health Check
+### 3. Health check
 
 **Endpoint:** `GET /api/health`
 
@@ -233,7 +234,7 @@ Agrega el header `X-API-Key` a tus requests:
 curl -H "X-API-Key: tu-api-key-aqui" http://localhost:7000/api/messages
 ```
 
-### 5. Listar API Keys
+### 5. Listar API keys
 
 **Endpoint:** `GET /api/auth/keys`
 
@@ -262,7 +263,7 @@ curl -H "X-API-Key: tu-api-key-aqui" http://localhost:7000/api/messages
 }
 ```
 
-### 6. Revocar API Key
+### 6. Revocar API key
 
 **Endpoint:** `DELETE /api/auth/keys/<key_id>`
 
@@ -287,7 +288,7 @@ curl -H "X-API-Key: tu-api-key-aqui" http://localhost:7000/api/messages
 }
 ```
 
-### 7. Búsqueda de Mensajes
+### 7. Búsqueda de mensajes
 
 **Endpoint:** `GET /api/messages/<session_id>/search`
 
@@ -306,7 +307,7 @@ curl -H "X-API-Key: tu-api-key-aqui" http://localhost:7000/api/messages
 curl "http://localhost:7000/api/messages/session-123/search?q=ayuda&sender=user"
 ```
 
-### 8. WebSocket - Tiempo Real
+### 8. WebSocket - Tiempo real
 
 **Conexión WebSocket:** `ws://localhost:7000`
 
@@ -498,7 +499,7 @@ Los timestamps deben estar en formato ISO 8601, ejemplos válidos:
 - `2025-11-15T20:30:00+00:00`
 - `2025-06-15T18:30:00.123Z`
 
-### Rate Limiting
+### Rate limiting
 
 La API implementa límites de tasa para proteger contra abuso:
 
