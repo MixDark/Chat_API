@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  chat-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chat-api
+    ports:
+      - "7000:7000"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=sqlite:///chat_dev.db
+    volumes:
+      - ./chat_dev.db:/app/chat_dev.db
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:7000/api/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
