@@ -35,7 +35,7 @@ API RESTful para procesamiento de mensajes de chat construida con Flask, que val
 
 ```bash
 git clone https://github.com/MixDark/Chat_API.git
-cd chat_api
+cd Chat_API
 ```
 
 ### 2. Crear entorno virtual
