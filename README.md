@@ -34,7 +34,7 @@ API RESTful para procesamiento de mensajes de chat construida con Flask, que val
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MixDark/Chat_API.git
 cd chat_api
 ```
 
