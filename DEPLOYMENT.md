@@ -67,7 +67,7 @@ terraform output alb_dns_name
 
 La API estará disponible en: `http://<ALB_DNS_NAME>/api/health`
 
-## Paso 3: Verificar Deployment
+## Paso 3: Verificar deployment
 
 ### Health check
 
@@ -143,7 +143,7 @@ Costos aproximados mensuales en us-east-1:
 
 Total estimado: ~$32/mes + data transfer
 
-## Troubleshooting
+## Solución de problemas
 
 ### Tasks no inician
 
