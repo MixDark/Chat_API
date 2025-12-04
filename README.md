@@ -455,7 +455,7 @@ El proyecto sigue principios de **arquitectura limpia** con separación de respo
 4. **Almacenamiento**: Se guarda el mensaje en la base de datos
 5. **Respuesta**: Se retorna el mensaje procesado con sus metadatos
 
-## 🔧 Configuración
+## Configuración
 
 El archivo `config.py` contiene configuraciones para diferentes entornos:
 
